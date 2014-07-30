@@ -17,8 +17,8 @@ if ($statement->rowCount()) {
 	$_SESSION['qr_ref']++;
 }
 
-if ($statement->fecthColumn(2) === '100') {
-	header('Location: winner.php');
+if ($statement->fetchColumn(2) === '100') {
+	echo 1;
 } else {
-	header('Location: qr.php');
+	
 }
