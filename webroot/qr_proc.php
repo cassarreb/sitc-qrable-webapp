@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_POST['submit'])) {
+	die();
+}
+
 session_start();
 
 if (!isset($_SESSION['qr_ref'])) {
