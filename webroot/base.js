@@ -39,7 +39,7 @@
 		var files = this.files;
 
 		if (!files) {
-			alert('We\'re sorry but file reader not supported!');
+			$('#file_reader_ns').modal('show');
 			return;
 		}
 
@@ -47,7 +47,12 @@
 			return;
 		}
 
-		var imageURL = URL.createObjectURL(files[0]);
+		var imageURL;
+		try {
+			imageURL = URL.createObjectURL(files[0]);
+		} catch (e) {
+			$('#object_url_ns').modal('show');
+		}
 
 		qrcode.decode(imageURL);
 	}
