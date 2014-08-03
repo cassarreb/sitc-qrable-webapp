@@ -47,14 +47,12 @@
 			return;
 		}
 
-		var imageURL;
 		try {
-			imageURL = URL.createObjectURL(files[0]);
+			var imageURL = URL.createObjectURL(files[0]);
+			qrcode.decode(imageURL);
 		} catch (e) {
 			$('#object_url_ns').modal('show');
 		}
-
-		qrcode.decode(imageURL);
 	}
 
 	function converted(qr) {
