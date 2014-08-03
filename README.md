@@ -1,5 +1,5 @@
-sict-qrable-webapp
-==================
+QRable
+======
 
 This is an app to be presented by ICTSA at Science in the City 2014. 
 Development is led by Daniel Desira, and any outside contributions should 
