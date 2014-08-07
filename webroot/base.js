@@ -3,6 +3,16 @@
 	'use strict';
 
 
+	//Game start
+
+	function start() {
+		$('#start_modal').modal('hide');
+	}
+
+	$('#start_modal').modal('show');
+	$('#start').click(start);
+
+
 	//Form submission
 
 	function submit() {
@@ -35,7 +45,7 @@
 		$('#load_qr').click();
 	}
 
-	function start() {
+	function loadQR() {
 		var files = this.files;
 
 		if (!files) {
@@ -60,7 +70,7 @@
 	}
 
 	$('#get_qr').click(showDialog);
-	$('#load_qr').on('change', start);
+	$('#load_qr').on('change', loadQR);
 	qrcode.callback = converted;
 
 })(jQuery);
