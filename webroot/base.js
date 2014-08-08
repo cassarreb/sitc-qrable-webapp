@@ -16,7 +16,7 @@
 	//Form submission
 
 	function submit() {
-		$.post('qr_proc.php', {
+		$.post('server.php', {
 			'qr': $('[name="qr"]').val(),
 			'submit': 1
 		}, response);
@@ -24,13 +24,11 @@
 	}
 
 	function response(data) {
-		if (data === '1') {
-			var score = localStorage.getItem('score');
-			if (score) {
-				localStorage.setItem('score', score + 1);
-			} else {
-				localStorage.setItem('score', 1);
-			}
+		var resObj = JSON.parse(data);
+		if (resObj.found) {
+
+		} else {
+
 		}
 	}
 
