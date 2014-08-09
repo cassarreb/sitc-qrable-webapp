@@ -28,4 +28,4 @@ $_SESSION['qr_codes'][] = $qr;
 $qr_count = count($_SESSION['qr_codes']);
 
 ?>
-{"qr_count":<? echo 10 - $qr_count; ?>}
+{"qr_remaining":<? echo 10 - $qr_count; ?>}

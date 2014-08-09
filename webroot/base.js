@@ -28,7 +28,7 @@
 		if (resObj.found) {
 
 		} else {
-
+			$('#qr_remaining').text(resObj.qr_remaining);
 		}
 	}
 
