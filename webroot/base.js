@@ -26,7 +26,7 @@
 	function response(data) {
 		var resObj = JSON.parse(data);
 		if (resObj.found) {
-
+			$('#duplicate_qr').modal('show');
 		} else {
 			$('#qr_remaining').text(resObj.qr_remaining);
 		}
