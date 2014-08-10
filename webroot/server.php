@@ -33,18 +33,23 @@ $_SESSION['qr_codes'][] = $qr;
 
 $qr_remaining = 10 - count($_SESSION['qr_codes']);
 
-?>
-{"qr_remaining":<?php echo $qr_remaining; ?>,"funfact":"<?php echo $qr_row['funfact']; ?>"}
-<?php
+$response_obj = array();
 
-if ($qr_remaining < 1) {
+$response_obj['qr_remaining'] = $qr_remaining;
+$response_obj['funfact'] = $qr_row['funfact'];
+
+if (! $qr_remaining) {
 	$statement = $db->query('SELECT code_id FROM current_code');
 	$current_code_id = $statement->fetch(PDO::FETCH_COLUMN);
 	$statement = $db->query('SELECT code FROM codes WHERE code_id=' . $current_code_id);
 	$current_code = $statement->fetch(PDO::FETCH_COLUMN);
-	?>{"token_code":<?php echo $current_code !== 5 ? $current_code : -1; ?>}<?php
+	
+	$response_obj['token_code'] = ($current_code !== 5 ? $current_code : -1);
+	
 	$current_code_id++;
 	$db->query('UPDATE current_code SET code_id=' . $current_code_id);
 }
+
+echo json_encode($response_obj);
 
 ?>
