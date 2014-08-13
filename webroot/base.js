@@ -23,12 +23,20 @@
 		return false;
 	}
 
-	function response(data) {
+	function response(data) {console.log(data);
 		var resObj = JSON.parse(data);
 		if (resObj.found) {
+			$('#duplicate_qr').modal('show');
+		} else if (resObj.non_occuring) {
+			$('#non_occuring_qr').modal('show');
+		} else if (resObj.qr_remaining) {
+			$('#qr_remaining').text(resObj.qr_remaining);
+			$('#funfact').text(resObj.funfact);
+		}
 
-		} else {
-
+		if (resObj.token_code !== -1) {
+			$('#token_code').text(resObj.token_code);
+			$('#token_code_modal').modal('show');
 		}
 	}
 
