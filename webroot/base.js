@@ -23,7 +23,7 @@
 		return false;
 	}
 
-	function response(data) {console.log(data);
+	function response(data) {
 		var resObj = JSON.parse(data);
 		if (resObj.found) {
 			$('#duplicate_qr').modal('show');
