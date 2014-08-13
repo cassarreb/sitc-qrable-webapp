@@ -17,7 +17,7 @@
 
 	function submit() {
 		$.post('server.php', {
-			'qr': $('[name="qr"]').val(),
+			'qr': $('#qr').val(),
 			'submit': 1
 		}, response);
 		return false;
