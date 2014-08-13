@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 10, 2014 at 10:24 PM
+-- Generation Time: Aug 13, 2014 at 11:45 AM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `codes` (
   `code` varchar(30) NOT NULL,
   `code_id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`code_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 -- --------------------------------------------------------
 
@@ -41,6 +41,13 @@ CREATE TABLE IF NOT EXISTS `codes` (
 CREATE TABLE IF NOT EXISTS `current_code` (
   `code_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `current_code`
+--
+
+INSERT INTO `current_code` (`code_id`) VALUES
+(1);
 
 -- --------------------------------------------------------
 
@@ -53,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `stand` (
   `qrcode` varchar(30) NOT NULL,
   `funfact` varchar(100) NOT NULL,
   PRIMARY KEY (`standref`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
