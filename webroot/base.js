@@ -34,7 +34,7 @@
 			$('#funfact').text(resObj.funfact);
 		}
 
-		if (resObj.token_code !== -1) {
+		if (resObj.token_code && resObj.token_code !== -1) {
 			$('#token_code').text(resObj.token_code);
 			$('#token_code_modal').modal('show');
 		}
