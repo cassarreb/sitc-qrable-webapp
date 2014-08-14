@@ -13,11 +13,11 @@ Thanks!
 
 ## Prerequisites
 
-* PHP
-* web server (Apache web server)
+* PHP (5.3+ recommended)
+* web server (such as Apache web server)
 * MYSQL
 
-For development purposes, one may use a stack such as XAMPP or KSWeb.
+For development purposes, one may use a stack such as XAMPP or KSWeb (for Android).
 
 ## Database setup
 
