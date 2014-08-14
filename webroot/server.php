@@ -55,5 +55,3 @@ if (! $qr_remaining && ! mac_found($db)) {
 }
 
 echo json_encode($response_obj);
-
-?>
