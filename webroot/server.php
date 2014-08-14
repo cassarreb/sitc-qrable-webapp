@@ -1,5 +1,7 @@
 <?php
 
+require_once 'includes/mac_address.php';
+
 if (! isset($_POST['submit'])) {
 	die();
 }
@@ -38,7 +40,7 @@ $response_obj = array();
 $response_obj['qr_remaining'] = $qr_remaining;
 $response_obj['funfact'] = $qr_row['funfact'];
 
-if (! $qr_remaining) {
+if (! $qr_remaining && ! mac_found($db)) {
 	$statement = $db->query('SELECT code_id FROM current_code');
 	$current_code_id = $statement->fetch(PDO::FETCH_COLUMN);
 	$statement = $db->query('SELECT code FROM codes WHERE code_id=' . $current_code_id);
@@ -48,6 +50,8 @@ if (! $qr_remaining) {
 	
 	$current_code_id++;
 	$db->query('UPDATE current_code SET code_id=' . $current_code_id);
+
+	record_mac($db);
 }
 
 echo json_encode($response_obj);
