@@ -31,6 +31,12 @@ in any one table and any manipulations that the app may perform:
 
 To be storing information about QR points.
 
+Example input:
+
+* standref - NULL
+* qrcode - 'ICTSA treasure hunt'
+* funfact - 'Treasure hunts are fun!'
+
 ### codes
 
 To be holding token-redeeming codes which are to be output by the app whenever 
@@ -44,3 +50,11 @@ Example input:
 
 To keep track of what codes have been consumed. App increments the code_id value 
 for every win.
+
+No value need to be changed for this table as the DDL takes care of that for you 
+with a single record holding the value 1.
+
+### player
+
+To keep track of every player who has won. App takes care of that itself so don't 
+tamper with it, unless you know what you're doing.
