@@ -1,8 +1,12 @@
-.load_qr {
+.load_qr, .waiting {
 	visibility: hidden;
 }
 
 .noscript {
 	position: relative;
 	top: 30px;
+}
+
+.waiting.show {
+	visibility: visible;
 }

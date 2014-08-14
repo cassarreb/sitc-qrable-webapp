@@ -16,6 +16,8 @@
 	//Form submission
 
 	function submit() {
+		$('.waiting').addClass('show');
+
 		$.post('server.php', {
 			'qr': $('#qr').val(),
 			'submit': 1
@@ -24,6 +26,8 @@
 	}
 
 	function response(data) {
+		$('.waiting').removeClass('show');
+
 		var resObj = JSON.parse(data);
 		if (resObj.found) {
 			$('#duplicate_qr').modal('show');
