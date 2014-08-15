@@ -38,6 +38,10 @@
 			$('#funfact').text(resObj.funfact);
 		}
 
+		if (resObj.already_won) {
+			$('#already_won').modal('show');
+		}
+
 		if (resObj.token_code && resObj.token_code !== -1) {
 			$('#token_code').text(resObj.token_code);
 			$('#token_code_modal').modal('show');

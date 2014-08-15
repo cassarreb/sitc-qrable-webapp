@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 13, 2014 at 01:25 PM
+-- Generation Time: Aug 15, 2014 at 11:00 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `codes` (
   `code` varchar(30) NOT NULL,
   `code_id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`code_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 -- --------------------------------------------------------
 
@@ -58,8 +58,10 @@ INSERT INTO `current_code` (`code_id`) VALUES
 CREATE TABLE IF NOT EXISTS `player` (
   `player_id` int(11) NOT NULL AUTO_INCREMENT,
   `mac_address` varchar(30) NOT NULL,
-  PRIMARY KEY (`player_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `stands` text NOT NULL,
+  PRIMARY KEY (`player_id`),
+  UNIQUE KEY `mac_address` (`mac_address`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 -- --------------------------------------------------------
 
@@ -68,11 +70,11 @@ CREATE TABLE IF NOT EXISTS `player` (
 --
 
 CREATE TABLE IF NOT EXISTS `stand` (
-  `standref` int(2) NOT NULL AUTO_INCREMENT,
+  `stand_id` int(2) NOT NULL AUTO_INCREMENT,
   `qrcode` varchar(30) NOT NULL,
   `funfact` varchar(100) NOT NULL,
-  PRIMARY KEY (`standref`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  PRIMARY KEY (`stand_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
