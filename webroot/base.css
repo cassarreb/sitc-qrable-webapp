@@ -1,3 +1,45 @@
+@keyframes first_dot_red_change {
+	0% {
+		color: rgb(255, 0, 0);
+	}
+	
+	50% {
+		color: rgb(125, 0, 0);
+	}
+	
+	100% {
+		color: rgb(0, 0, 0);
+	}
+}
+
+@keyframes second_dot_red_change {
+	0% {
+		color: rgb(125, 0, 0);
+	}
+	
+	50% {
+		color: rgb(255, 0, 0);
+	}
+	
+	100% {
+		color: rgb(0, 0, 0);
+	}
+}
+
+@keyframes third_dot_red_change {
+	0% {
+		color: rgb(0, 0, 0);
+	}
+	
+	50% {
+		color: rgb(125, 0, 0);
+	}
+	
+	100% {
+		color: rgb(255, 0, 0);
+	}
+}
+
 .load_qr, .waiting {
 	visibility: hidden;
 }
@@ -9,4 +51,16 @@
 
 .waiting.show {
 	visibility: visible;
+}
+
+.first_waiting_dot {
+	animation: first_dot_red_change 75ms infinite;
+}
+
+.second_waiting_dot {
+	animation: second_dot_red_change 75ms infinite;
+}
+
+.third_waiting_dot {
+	animation: third_dot_red_change 75ms infinite;
 }
