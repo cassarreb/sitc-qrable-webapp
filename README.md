@@ -56,5 +56,6 @@ with a single record holding the value 1.
 
 ### player
 
-To keep track of every player who has won. App takes care of that itself so don't 
-tamper with it, unless you know what you're doing.
+To keep track of every player's progress. App takes care of that itself so don't 
+tamper with it, unless you know what you're doing. Once 10 QR codes are collected, 
+the player is allowed to play again since he has already won.
