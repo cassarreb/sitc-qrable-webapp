@@ -59,3 +59,14 @@ with a single record holding the value 1.
 To keep track of every player's progress. App takes care of that itself so don't 
 tamper with it, unless you know what you're doing. Once 10 QR codes are collected, 
 the player is allowed to play again since he has already won.
+
+## Web app hosting
+
+The `` webroot `` folder contains all files to be hosted.
+
+Both client and server should be hosted on the same domain, unless CORS is enabled 
+on server. Please follow the guide for your web server software in the event you 
+opt for hosting the server on some other end-point.
+
+It is also recommended to minify the supplied JavaScript and CSS files using some 
+tool such as http://jscompress.com/.
