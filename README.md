@@ -21,8 +21,8 @@ For development purposes, one may use a stack such as XAMPP or KSWeb (for Androi
 
 ## Database setup
 
-DDL script is provided in config folder under the name sitc.sql. Please, run 
-this script to generate all the tables you need.
+DDL script is provided in the `` config `` folder under the name `` sitc.sql ``. 
+Please, run this script to generate all the tables you need.
 
 In the following subsections you will find what data is expected to be present 
 in any one table and any manipulations that the app may perform:
