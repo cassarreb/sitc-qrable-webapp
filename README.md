@@ -21,8 +21,8 @@ For development purposes, one may use a stack such as XAMPP or KSWeb (for Androi
 
 ## Database setup
 
-DDL script is provided in config folder under the name sitc.sql. Please, run 
-this script to generate all the tables you need.
+DDL script is provided in the `` config `` folder under the name `` sitc.sql ``. 
+Please, run this script to generate all the tables you need.
 
 In the following subsections you will find what data is expected to be present 
 in any one table and any manipulations that the app may perform:
@@ -56,5 +56,17 @@ with a single record holding the value 1.
 
 ### player
 
-To keep track of every player who has won. App takes care of that itself so don't 
-tamper with it, unless you know what you're doing.
+To keep track of every player's progress. App takes care of that itself so don't 
+tamper with it, unless you know what you're doing. Once 10 QR codes are collected, 
+the player is allowed to play again since he has already won.
+
+## Web app hosting
+
+The `` webroot `` folder contains all files to be hosted.
+
+Both client and server should be hosted on the same domain, unless CORS is enabled 
+on server. Please follow the guide for your web server software in the event you 
+opt for hosting the server on some other end-point.
+
+It is also recommended to minify the supplied JavaScript and CSS files using some 
+tool such as http://jscompress.com/.
