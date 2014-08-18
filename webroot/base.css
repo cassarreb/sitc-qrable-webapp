@@ -86,6 +86,14 @@
 	visibility: hidden;
 }
 
+.navbar {
+	background-color: rgb(255, 150, 0);
+}
+
+.navbar-toggle {
+	background-color: rgb(0, 10, 255);
+}
+
 .noscript {
 	position: relative;
 	top: 30px;
