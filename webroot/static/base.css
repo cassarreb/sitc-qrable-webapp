@@ -87,7 +87,7 @@
 }
 
 .navbar {
-	background-color: rgb(255, 150, 0);
+	border-color: rgb(255, 150, 0);
 }
 
 .navbar-toggle {
