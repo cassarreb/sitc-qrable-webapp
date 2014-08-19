@@ -69,4 +69,4 @@ on server. Please follow the guide for your web server software in the event you
 opt for hosting the server on some other end-point.
 
 It is also recommended to minify the supplied JavaScript and CSS files using some 
-tool such as http://jscompress.com/.
+tool such as http://gpbmike.github.io/refresh-sf/.
