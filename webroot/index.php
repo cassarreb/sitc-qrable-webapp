@@ -14,7 +14,7 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="base.css" />
+		<link rel="stylesheet" href="static/base.css" />
 
 		<title>QRable</title>
 	</head>
@@ -170,6 +170,6 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script src="//dannydes.github.io/jsqrcode-production/jsqrcode.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-		<script src="base.js"></script>
+		<script src="static/base.js"></script>
 	</body>
 </html>
