@@ -32,12 +32,14 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 				<div class="navbar-collapse collapse in">
 					<ul class="menu nav navbar-nav navbar-right">
 						<li>
-							<a target="_blank" href="http://dand.netne.net/?page_id=6">Daniel Desira - lead developer</a>
+							<a target="_blank" href="http://dand.netne.net/?page_id=6">
+								<span>Daniel Desira - lead developer</span>
+							</a>
 						</li>
 						<li>
 							<a target="_blank" href="http://www.ictsamalta.org">
 								<img alt="ICTSA logo" src="static/ICTSALogo.png" width="50" height="20" />
-								ICTSA
+								<span>ICTSA</span>
 							</a>
 						</li>
 					</ul>
