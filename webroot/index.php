@@ -1,3 +1,12 @@
+<?php
+
+require_once 'includes/mac_address.php';
+require_once 'includes/progress.php';
+
+$db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
@@ -53,7 +62,7 @@
 				</strong>
 			</p>
 			<p>
-				<strong id="qr_remaining">10</strong> stands remaining!
+				<strong id="qr_remaining"><?php echo 10 - count(load_qr_codes($db)); ?></strong> stands remaining!
 			</p>
 			<p>
 				<strong id="funfact"></strong>
