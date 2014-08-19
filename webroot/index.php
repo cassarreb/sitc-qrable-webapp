@@ -35,7 +35,10 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 							<a target="_blank" href="http://dand.netne.net/?page_id=6">Daniel Desira - lead developer</a>
 						</li>
 						<li>
-							<a target="_blank" href="http://www.ictsamalta.org">ICTSA</a>
+							<a target="_blank" href="http://www.ictsamalta.org">
+								<img alt="ICTSA logo" src="static/ICTSALogo.png" width="50" height="20" />
+								ICTSA
+							</a>
 						</li>
 					</ul>
 				</div>
