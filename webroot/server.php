@@ -50,9 +50,9 @@ $response_obj['funfact'] = $qr_row['funfact'];
 
 if (! $qr_remaining) {
 	$statement = $db->query('SELECT code_id FROM current_code');
-	$current_code_id = $statement->fetch(PDO::FETCH_COLUMN);
+	$current_code_id = $statement->fetchColumn();
 	$statement = $db->query('SELECT code FROM codes WHERE code_id=' . $current_code_id);
-	$current_code = $statement->fetch(PDO::FETCH_COLUMN);
+	$current_code = $statement->fetchColumn();var_dump($current_code);
 	
 	$response_obj['token_code'] = ($current_code !== 5 ? $current_code : -1);
 	
