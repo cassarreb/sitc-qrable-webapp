@@ -33,9 +33,9 @@ To be storing information about QR points.
 
 Example input:
 
-* standref - NULL
-* qrcode - 'ICTSA treasure hunt'
-* funfact - 'Treasure hunts are fun!'
+* `` standref `` - `` NULL ``
+* `` qrcode `` - `` 'ICTSA treasure hunt' ``
+* `` funfact `` - `` 'Treasure hunts are fun!' ``
 
 ### codes
 
@@ -44,7 +44,7 @@ user collects 10 QR codes and the limit of winners has not been reached.
 
 Example input:
 
-* code - 'chiwawwa'
+* `` code `` - `` 'chiwawwa' ``
 
 ### current_code
 
