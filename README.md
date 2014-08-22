@@ -42,8 +42,11 @@ Example input:
 To be holding token-redeeming codes which are to be output by the app whenever 
 user collects 10 QR codes and the limit of winners has not been reached.
 
+It's important that the `` code_id `` of the first record is `` 1 ``.
+
 Example input:
 
+* `` code_id `` - `` NULL ``
 * `` code `` - `` 'chiwawwa' ``
 
 ### current_code
