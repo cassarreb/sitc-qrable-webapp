@@ -14,6 +14,7 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="static/base.css" />
 
 		<title>QRable</title>
@@ -38,6 +39,7 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 						</li>
 						<li>
 							<a target="_blank" href="https://github.com/dannydes/sitc-qrable-webapp">
+								<div class="fa fa-github-alt"></div>
 								<span>Fork us on Github</span>
 							</a>
 						</li>
