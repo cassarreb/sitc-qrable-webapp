@@ -68,12 +68,12 @@
 	function loadQR() {
 		var files = this.files;
 
-		if (!files) {
+		if (! files) {
 			$('#file_reader_ns').modal('show');
 			return;
 		}
 
-		if (!files.length) {
+		if (! files.length) {
 			return;
 		}
 
