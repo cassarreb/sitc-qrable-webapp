@@ -90,12 +90,24 @@
 	border-color: rgb(255, 150, 0);
 }
 
+.navbar img {
+	opacity: 0.5;
+}
+
+.navbar a:hover img {
+	opacity: 1;
+}
+
 .navbar span {
 	color: rgb(0, 0, 255);
 }
 
 .navbar a:hover span {
 	color: rgb(0, 0, 150);
+}
+
+.navbar > li {
+	text-indent: center;
 }
 
 .noscript {
