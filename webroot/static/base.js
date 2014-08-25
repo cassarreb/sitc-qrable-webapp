@@ -18,10 +18,12 @@
 	function submit() {
 		$('.waiting').addClass('show');
 
-		$.post('server.php', {
+		var data = {
 			'qr': $('#qr').val(),
 			'submit': 1
-		}, response);
+		};
+		$.post('server.php', data, response).fail(error);
+
 		return false;
 	}
 
@@ -46,6 +48,10 @@
 			$('#token_code').text(resObj.token_code);
 			$('#token_code_modal').modal('show');
 		}
+	}
+
+	function error() {
+		$('#xhr_error').modal('show');
 	}
 
 	$('#qr_form').submit(submit);

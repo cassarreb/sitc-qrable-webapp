@@ -174,6 +174,21 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 					</div>
 				</div>
 			</div>
+			<div id="xhr_error" class="modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							Oh noes! Something went wrong on our side. Please, contact our team.
+						</div>
+					</div>
+				</div>
+			</div>
 			<form id="qr_form" method="post" action="#">
 				<label for="qr">QR code:</label>
 				<input id="qr" class="form-control" type="text" name="qr" />
