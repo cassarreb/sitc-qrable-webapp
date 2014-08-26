@@ -50,7 +50,7 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 						</li>
 						<li>
 							<a target="_blank" href="http://www.ictsamalta.org">
-								<img alt="ICTSA logo" src="static/ICTSALogo.png" width="50" height="20" />
+								<img alt="ICTSA" src="static/ICTSALogo.png" width="50" height="20" />
 							</a>
 						</li>
 					</ul>
