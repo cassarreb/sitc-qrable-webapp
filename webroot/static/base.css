@@ -82,8 +82,8 @@
 	}
 }
 
-.load_qr, .waiting {
-	visibility: hidden;
+input.load_qr, .waiting {
+	display: none;
 }
 
 .navbar {
@@ -116,7 +116,11 @@
 }
 
 .waiting.show {
-	visibility: visible;
+	display: block;
+}
+
+.waiting_dots {
+	font-size: 30px;
 }
 
 .first_waiting_dot {

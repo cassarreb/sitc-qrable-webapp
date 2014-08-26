@@ -71,7 +71,7 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 			</div>
 			<p class="waiting">
 				waiting 
-				<strong>
+				<strong class="waiting_dots">
 					<span class="first_waiting_dot">.</span>
 					<span class="second_waiting_dot">.</span>
 					<span class="third_waiting_dot">.</span>
