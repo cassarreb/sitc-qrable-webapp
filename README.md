@@ -9,6 +9,8 @@ primarily examined by the subject.
 Derivatives of this work are allowed as long as the GPL license is preserved 
 and respected.
 
+Logos included with the app are the intellectual property of their respective owners.
+
 Thanks!
 
 ## Prerequisites
