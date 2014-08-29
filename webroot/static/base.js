@@ -3,6 +3,29 @@
 	'use strict';
 
 
+	//Easter eggs
+
+	function checkForEasterEgg(funfact) {
+		var standEasterEggs = [
+			{
+				pattern: /barell/,
+				action: function doBarellRoll() {
+
+				}
+			}
+		];
+
+		standEasterEggs.some(function checkIfEasterEgg(easterEgg) {
+			if (easterEgg.pattern.test(funfact)) {
+				easterEgg.action();
+				return true;
+			}
+
+			return false;
+		});
+	}
+
+
 	//Game start
 
 	function start() {
@@ -38,6 +61,8 @@
 		} else if (resObj.qr_remaining) {
 			$('#qr_remaining').text(resObj.qr_remaining);
 			$('#funfact').text(resObj.funfact);
+
+			checkForEasterEgg(resObj.funfact);
 		}
 
 		if (resObj.already_won) {
