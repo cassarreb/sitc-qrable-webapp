@@ -1,3 +1,24 @@
+/* Barell roll Easter egg */
+@keyframes barell_roll {
+	from {
+		transform: rotate(0deg);
+	}
+	
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes barell_roll {
+	from {
+		transform: rotate(0deg);
+	}
+	
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 @keyframes first_dot_red_change {
 	0% {
 		color: rgb(255, 0, 0);
@@ -80,6 +101,12 @@
 	100% {
 		color: rgb(255, 0, 0);
 	}
+}
+
+/* Barell roll Easter egg */ 
+.container.roll {
+	animation: barell_roll 2000ms;
+	-webkit-animation: barell_roll 2000ms;
 }
 
 input.load_qr, .waiting {

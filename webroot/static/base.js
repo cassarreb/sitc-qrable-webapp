@@ -10,7 +10,7 @@
 			{
 				pattern: /barell/,
 				action: function doBarellRoll() {
-
+					$('.container').addClass('roll');
 				}
 			}
 		];
