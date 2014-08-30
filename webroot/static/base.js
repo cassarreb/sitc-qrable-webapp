@@ -39,10 +39,16 @@
 	//Form submission
 
 	function submit() {
+		var qrCode = $('#qr').val();
+
+		if (qrCode === '') {
+			return false;
+		}
+
 		$('.waiting').addClass('show');
 
 		var data = {
-			'qr': $('#qr').val(),
+			'qr': qrCode,
 			'submit': 1
 		};
 		$.post('server.php', data, response).fail(error);
