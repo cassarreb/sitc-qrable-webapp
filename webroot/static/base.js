@@ -52,6 +52,7 @@
 
 	function response(data) {
 		$('.waiting').removeClass('show');
+		$('#qr').val('');
 
 		var resObj = JSON.parse(data);
 		if (resObj.found) {
