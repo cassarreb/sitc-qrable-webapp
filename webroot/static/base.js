@@ -51,6 +51,8 @@
 	}
 
 	function response(data) {
+		var qrCode = $('#qr').val();
+
 		$('.waiting').removeClass('show');
 		$('#qr').val('');
 
@@ -60,6 +62,10 @@
 		} else if (resObj.non_occuring) {
 			$('#non_occuring_qr').modal('show');
 		} else if (resObj.qr_remaining) {
+			if (!resObj.already_won && !resObj.token_code) {
+				history.pushState(null, '', qrCode);
+			}
+
 			$('#qr_remaining').text(resObj.qr_remaining);
 			$('#funfact').text(resObj.funfact);
 
