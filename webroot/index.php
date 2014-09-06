@@ -45,7 +45,7 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 						</li>
 						<li>
 							<a target="_blank" href="http://www.scienceinthecity.org.mt/">
-								<span>Science in the City</span>
+								<img alt="Science in the City" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/602585_137686633039158_2131553306_n.jpg?oh=4e980c965d069dbccfe69091ade3396e&oe=548ADA17&__gda__=1418644934_6be06968e3929bf52afb340bfb6303a6" height="30" width="70">
 							</a>
 						</li>
 						<li>
