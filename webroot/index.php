@@ -33,23 +33,23 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 				<div class="navbar-collapse collapse in">
 					<ul class="menu nav navbar-nav navbar-right">
 						<li>
-							<a target="_blank" href="http://dand.netne.net/?page_id=6">
+							<a target="_blank" href="//dand.netne.net/?page_id=6">
 								<span>Daniel Desira - lead developer</span>
 							</a>
 						</li>
 						<li>
-							<a target="_blank" href="https://github.com/dannydes/sitc-qrable-webapp">
+							<a target="_blank" href="//github.com/dannydes/sitc-qrable-webapp">
 								<div class="fa fa-github-alt"></div>
 								<span>Fork us on Github</span>
 							</a>
 						</li>
 						<li>
-							<a target="_blank" href="http://www.scienceinthecity.org.mt/">
-								<img alt="Science in the City" src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/602585_137686633039158_2131553306_n.jpg?oh=4e980c965d069dbccfe69091ade3396e&oe=548ADA17&__gda__=1418644934_6be06968e3929bf52afb340bfb6303a6" height="70" width="70">
+							<a target="_blank" href="//scienceinthecity.org.mt/">
+								<img alt="Science in the City" src="//fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/602585_137686633039158_2131553306_n.jpg?oh=4e980c965d069dbccfe69091ade3396e&oe=548ADA17&__gda__=1418644934_6be06968e3929bf52afb340bfb6303a6" height="70" width="70">
 							</a>
 						</li>
 						<li>
-							<a target="_blank" href="http://www.ictsamalta.org">
+							<a target="_blank" href="//ictsamalta.org">
 								<img alt="ICTSA" src="static/ICTSALogo.png">
 							</a>
 						</li>
