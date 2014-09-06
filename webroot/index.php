@@ -10,12 +10,12 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="static/base.css" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="static/base.css">
 
 		<title>QRable</title>
 	</head>
@@ -50,7 +50,7 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 						</li>
 						<li>
 							<a target="_blank" href="http://www.ictsamalta.org">
-								<img alt="ICTSA" src="static/ICTSALogo.png" />
+								<img alt="ICTSA" src="static/ICTSALogo.png">
 							</a>
 						</li>
 					</ul>
@@ -190,8 +190,8 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 			</div>
 			<form id="qr_form" method="post" action="#">
 				<label for="qr">QR code:</label>
-				<input id="qr" class="form-control" type="text" name="qr" />
-				<input id="load_qr" class="load_qr" type="file" name="load_qr" accept="image/*" />
+				<input id="qr" class="form-control" type="text" name="qr">
+				<input id="load_qr" class="load_qr" type="file" name="load_qr" accept="image/*">
 				<button id="get_qr" class="btn btn-default" type="button" name="get_qr">Get QR</button>
 				<button class="btn btn-primary" type="submit" name="submit">Go</button>
 			</form>
