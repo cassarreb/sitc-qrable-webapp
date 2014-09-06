@@ -195,7 +195,9 @@ $db = new PDO('mysql:host=localhost;dbname=sitc', 'root', '');
 				<button id="get_qr" class="btn btn-default" type="button" name="get_qr">Get QR</button>
 				<button class="btn btn-primary" type="submit" name="submit">Go</button>
 			</form>
-			<noscript class="alert alert-warning noscript">JavaScript not supported!</noscript>
+			<noscript class="alert alert-warning noscript">
+				Please <a href="//enable-javascript.com" target="_blank">enable JavaScript.</a>
+			</noscript>
 		</div>
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
